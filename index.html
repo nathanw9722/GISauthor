@@ -90,23 +90,27 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div id="mapid"></div>
-            <script>
+            <div class="col-lg-8 col-lg-offset-2">
+                <div id="mapid"></div>
+                <script>
 
-                // initialize the map
-                var map = L.map('map').setView([42.35, -71.08], 13);
+                    // initialize the map
+                    var map = L.map('map').setView([42.35, -71.08], 13);
 
-                // load a tile layer
-                L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-                    {
-                      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-                      maxZoom: 17,
-                      minZoom: 9
-                    }).addTo(map);
+                    // load a tile layer
+                    L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                        {
+                          attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                          maxZoom: 17,
+                          minZoom: 9
+                        }).addTo(map);
 
-            </script>
+                </script>
+            </div>
         </div>
     </section>
+  
+            
 
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
